@@ -24,18 +24,12 @@ simulated_data$participant |>
 
 
 ### Test 3 ###
-simulated_data$mean_measurement_error |>
-  unique() == c(
-    "Ash's Mean Measurement Error",
-    "Jacki's Mean Measurement Error",
-    "Matt's Mean Measurement Error",
-    "Mike's Mean Measurement Error",
-    "Rol's Mean Measurement Error"
-  )
+simulated_data$participant_height_inches |>
+  min() == 50
 
 ### Test 4 ###
-simulated_data$participant |>
-  class() == "character"
+simulated_data$participant_height_inches |>
+  class() == "numeric"
 
 ### Test 5 ###
 simulated_data$method |>

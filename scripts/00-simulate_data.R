@@ -54,7 +54,8 @@ simulated_data <-
       size = 100,
       replace = TRUE
 ),
-measurement_error = runif(n=100, min = 0001, max = 5)
+measurement_error = runif(n=100, min = 0001, max = 5),
+participant_height_inches = runif(n=100, min = 50, max = 85)
 )
 
 
